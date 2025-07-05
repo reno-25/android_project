@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Vote Title -->
+    <TextView
+        android:id="@+id/voteTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Vote Title"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/voteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vote Title"
+        android:inputType="text" />
+
+    <!-- Options Section -->
+    <TextView
+        android:id="@+id/optionsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Up to 5 Options"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Option 1 -->
+    <LinearLayout
+        android:id="@+id/option1Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <EditText
+            android:id="@+id/option1Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Option 1"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/option1Image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_add_image" />
+    </LinearLayout>
+
+    <!-- Option 2 -->
+    <LinearLayout
+        android:id="@+id/option2Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <EditText
+            android:id="@+id/option2Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Option 2"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/option2Image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_add_image" />
+    </LinearLayout>
+
+    <!-- Option 3 -->
+    <LinearLayout
+        android:id="@+id/option3Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <EditText
+            android:id="@+id/option3Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Option 3"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/option3Image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_add_image" />
+    </LinearLayout>
+
+    <!-- Option 4 -->
+    <LinearLayout
+        android:id="@+id/option4Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <EditText
+            android:id="@+id/option4Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Option 4"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/option4Image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_add_image" />
+    </LinearLayout>
+
+    <!-- Option 5 -->
+    <LinearLayout
+        android:id="@+id/option5Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <EditText
+            android:id="@+id/option5Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Option 5"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/option5Image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_add_image" />
+    </LinearLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitVoteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Vote"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

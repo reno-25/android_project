@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Vote Title -->
+    <TextView
+        android:id="@+id/voteTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote Title"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- RecyclerView to display options -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/optionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Submit Vote Button -->
+    <Button
+        android:id="@+id/submitVoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Vote"
+        android:layout_marginTop="8dp"
+        android:enabled="false"/> <!-- Initially disabled -->
+
+</LinearLayout>
