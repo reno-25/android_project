@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="Scan QR"
+        android:layout_centerInParent="true" />
+
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/scannedDataText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/barcode_scanner"
+        android:text="Scanned Data Will Appear Here"
+        android:textSize="16sp" />
+
+</RelativeLayout>

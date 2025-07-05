@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">myfirebase</string>
+    <string name="openDrawer">openDrawer</string>
+    <string name="closeDrawer">closeDrawer</string>
+</resources>
+
+
+
